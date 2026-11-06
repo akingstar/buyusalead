@@ -2,215 +2,196 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>BuyUsaLead | Premium US Leads & Pay-Per-Call Solutions</title>
-<meta name="description" content="Grow your business with US-focused lead generation and qualified pay-per-call solutions. Explore Auto Insurance, Health Insurance, Final Expense, SSDI, Debt Relief and Home Services.">
-<meta name="keywords" content="USA leads, US lead generation, pay per call, insurance leads, auto insurance leads, health insurance leads, final expense leads, SSDI leads, debt relief leads, home services leads">
-<meta name="author" content="BuyUsaLead">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#07101e">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d18">
+<title>BuyUsaLead | Premium US Lead Generation & Pay-Per-Call</title>
+<meta name="description" content="BuyUsaLead helps businesses explore US-focused lead generation and pay-per-call campaign solutions across insurance, financial and home service verticals.">
+<meta name="keywords" content="US leads, lead generation, pay per call, auto insurance leads, health insurance leads, final expense leads, SSDI leads, debt relief leads">
 <link rel="canonical" href="https://akingstar.github.io/buyusalead/">
-
 <meta property="og:type" content="website">
-<meta property="og:title" content="BuyUsaLead | Premium Leads. Qualified Calls.">
-<meta property="og:description" content="Performance-focused US lead generation and pay-per-call campaign solutions.">
+<meta property="og:title" content="BuyUsaLead | Premium Acquisition Solutions">
+<meta property="og:description" content="Premium lead generation and pay-per-call campaign solutions for businesses targeting the US market.">
 <meta property="og:url" content="https://akingstar.github.io/buyusalead/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BuyUsaLead | Premium US Leads">
-<meta name="twitter:description" content="Premium lead generation and pay-per-call solutions for US-focused businesses.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"BuyUsaLead",
- "url":"https://akingstar.github.io/buyusalead/",
- "description":"US-focused lead generation and pay-per-call campaign solutions.",
- "logo":"https://akingstar.github.io/buyusalead/assets/logo.png",
- "areaServed":{"@type":"Country","name":"United States"},
- "knowsAbout":["Lead Generation","Pay Per Call","Auto Insurance","Health Insurance","Final Expense","SSDI","Debt Relief","Home Services"]
-}
-
-// Premium scroll effects and reveal animations.
-document.documentElement.classList.add("js");
-
-const revealTargets = document.querySelectorAll(
- ".section-head,.service-card,.industry-card,.why-grid,.process-card,.cta-band,.form-wrap"
-);
-
-if ("IntersectionObserver" in window) {
- const revealObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-   if (entry.isIntersecting) {
-    entry.target.classList.add("visible");
-    observer.unobserve(entry.target);
-   }
-  });
- }, {threshold:0.12,rootMargin:"0px 0px -35px 0px"});
-
- revealTargets.forEach(el => el.classList.add("reveal"));
- revealTargets.forEach(el => revealObserver.observe(el));
-} else {
- revealTargets.forEach(el => el.classList.add("visible"));
-}
-
-const progress = document.getElementById("scrollProgress");
-let progressTick = false;
-
-window.addEventListener("scroll", () => {
- if (progressTick) return;
- progressTick = true;
- requestAnimationFrame(() => {
-  const max = document.documentElement.scrollHeight - window.innerHeight;
-  const value = max > 0 ? (window.scrollY / max) * 100 : 0;
-  progress.style.width = value + "%";
-  progressTick = false;
- });
-}, {passive:true});
-
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"FAQPage",
- "mainEntity":[
-  {"@type":"Question","name":"What services does BuyUsaLead offer?","acceptedAnswer":{"@type":"Answer","text":"BuyUsaLead offers lead generation and pay-per-call campaign solutions for businesses targeting US consumers."}},
-  {"@type":"Question","name":"Can I request both leads and calls?","acceptedAnswer":{"@type":"Answer","text":"Yes. Buyers can request leads, pay-per-call or both, subject to campaign requirements."}},
-  {"@type":"Question","name":"Which industries are supported?","acceptedAnswer":{"@type":"Answer","text":"Listed verticals include Auto Insurance, Health Insurance, Final Expense, SSDI, Debt Relief and Home Services."}},
-  {"@type":"Question","name":"Can I specify states and monthly volume?","acceptedAnswer":{"@type":"Answer","text":"Yes. Include your target geography and estimated monthly volume in the buyer inquiry form."}}
- ]
-}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
- --bg:#070d18;--bg2:#0b1423;--panel:#101d30;--panel2:#13243a;
- --blue:#397cff;--cyan:#68d4ff;--white:#f5f8ff;--muted:#a2b0c4;
- --line:rgba(155,183,220,.15);--radius:18px;
+ --bg:#080d18;--bg2:#0b1423;--panel:#101d30;--panel2:#14243a;
+ --blue:#4388ff;--cyan:#83d9ff;--white:#f5f8ff;--muted:#a2b0c4;
+ --line:rgba(155,183,220,.15);--radius:20px;--max:1180px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--white);line-height:1.65;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--white);line-height:1.7;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 80% 0%,#15396620,transparent 40%),radial-gradient(ellipse at 0% 60%,#12315a18,transparent 42%)}
 a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
-.container{width:min(1160px,91%);margin:auto}
+button,input,select,textarea{font:inherit}
+img,svg{display:block;max-width:100%}
+.container{width:min(var(--max),91%);margin:auto}
 h1,h2,h3,.logo{font-family:Manrope,sans-serif}
-h1{font-size:clamp(43px,6.2vw,76px);line-height:1.08;letter-spacing:-3px;font-weight:800}
-h2{font-size:clamp(31px,4vw,47px);line-height:1.15;letter-spacing:-1.7px}
+h1{font-size:clamp(44px,6.5vw,78px);line-height:1.04;letter-spacing:-3.8px;font-weight:800}
+h2{font-size:clamp(32px,4.2vw,49px);line-height:1.13;letter-spacing:-2px}
 h3{line-height:1.3}
 p{color:var(--muted)}
-.gradient-text{background:linear-gradient(100deg,#fff 5%,#7bcfff 55%,#4385ff 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#8fcfff;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-.eyebrow:before{content:"";width:22px;height:2px;background:var(--cyan)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border:1px solid transparent;border-radius:9px;background:linear-gradient(110deg,#4388ff,#2865dc);color:white;font-weight:800;font-size:14px;box-shadow:0 8px 30px #2469e344;transition:.25s;cursor:pointer}
-.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px #2469e366}
-.btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border:1px solid #536983;border-radius:9px;color:white;font-weight:700;font-size:14px;transition:.2s}
-.btn-outline:hover{border-color:var(--cyan);background:#ffffff0b}
-header{height:78px;position:sticky;top:0;z-index:100;background:#070d18eF;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:23px;font-weight:800;letter-spacing:-1.1px}
-.logo .logo-blue{color:#68caff}
-.logo small{display:block;font-family:"DM Sans";font-size:8px;letter-spacing:3px;color:#8296b0;font-weight:700;margin-top:-5px}
-.navlinks{display:flex;align-items:center;gap:29px;font-size:13px;color:#b5c3d6;font-weight:600}
-.navlinks a:hover{color:white}
-.menu{display:none;color:white;background:none;border:0;font-size:27px}
-.hero{position:relative;padding:105px 0 95px;background:radial-gradient(ellipse at 15% 0%,#18365b66,transparent 45%),radial-gradient(ellipse at 90% 50%,#164c9560,transparent 43%),linear-gradient(135deg,#080f1d,#0a1525 65%,#091324);overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(to bottom,black,transparent)}
-.hero-grid{position:relative;display:grid;grid-template-columns:1.04fr .96fr;gap:50px;align-items:center}
-.hero-copy>p{font-size:17px;max-width:570px;margin-top:23px;line-height:1.85}
-.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
-.trustline{display:flex;align-items:center;gap:12px;margin-top:35px;color:#9eb0c6;font-size:12px}
-.trust-dot{width:8px;height:8px;background:#52d8a0;border-radius:50%;box-shadow:0 0 14px #52d8a0}
-.hero-visual{position:relative;min-width:0}
-.hero-photo{height:435px;width:100%;object-fit:cover;border-radius:22px;border:1px solid #7599c84c;box-shadow:0 30px 90px #0008;filter:saturate(.83)}
-.photo-overlay{position:absolute;inset:0;border-radius:22px;background:linear-gradient(0deg,#07111eaa,transparent 65%)}
-.floating-card{position:absolute;bottom:25px;left:-28px;background:#101e31ed;backdrop-filter:blur(14px);border:1px solid #7897bb44;border-radius:13px;padding:17px 20px;box-shadow:0 15px 45px #0007}
-.floating-card strong{display:block;font-size:15px}
-.floating-card span{font-size:12px;color:var(--cyan)}
-.visual-tag{position:absolute;top:20px;right:-14px;padding:10px 14px;border-radius:9px;background:#10233bdc;border:1px solid #6d91bd55;color:#dcecff;font-size:11px;font-weight:800;letter-spacing:1px}
-.hero-bottom{position:relative;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:75px;padding-top:25px;border-top:1px solid var(--line)}
-.hero-bottom span{font-size:12px;color:#91a4bb;letter-spacing:1.2px;font-weight:700}
-.section{padding:100px 0}
-.section-dark{background:#0a1422}
-.section-head{max-width:720px;margin:0 auto 48px;text-align:center}
+.gradient{background:linear-gradient(100deg,#fff 5%,#8bdcff 52%,#548cff 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#91d7ff;font-size:11px;font-weight:800;letter-spacing:2.1px;text-transform:uppercase}
+.eyebrow:before{content:"";width:24px;height:1px;background:var(--cyan);box-shadow:0 0 10px #68cfff}
+.section{padding:108px 0;position:relative}
+.section-alt{background:linear-gradient(180deg,#0a1422,#0b1625)}
+.section-head{max-width:730px;margin:0 auto 54px;text-align:center}
 .section-head .eyebrow{justify-content:center}
-.section-head h2{margin:15px 0}
+.section-head h2{margin:17px 0}
 .section-head p{font-size:15px;max-width:610px;margin:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:15px 23px;border:1px solid #73b7ff55;border-radius:10px;background:linear-gradient(110deg,#4388ff,#2864d8);color:white;font-size:13px;font-weight:800;box-shadow:0 10px 35px #2469e333;transition:.3s;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 42px #2469e366}
+.btn .arrow{font-size:18px;line-height:1}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border:1px solid #7187a455;border-radius:10px;color:#eaf3ff;font-size:13px;font-weight:700;transition:.3s}
+.btn-ghost:hover{border-color:#82d4ff;background:#ffffff08;transform:translateY(-3px)}
+header{height:82px;position:sticky;top:0;z-index:100;background:#080e1beF;border-bottom:1px solid var(--line);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:800;letter-spacing:-1px;white-space:nowrap}
+.logo-mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid #72bfff66;border-radius:11px;background:linear-gradient(145deg,#2c72e9,#153b77);box-shadow:0 7px 24px #286bd633}
+.logo-mark svg{width:23px;height:23px}
+.logo-name span{color:#82d5ff}
+.logo-name small{display:block;font-family:"DM Sans";font-size:8px;letter-spacing:2px;color:#8197b2;font-weight:700;margin-top:-2px}
+.navlinks{display:flex;align-items:center;gap:27px;font-size:12px;color:#b9c7d9;font-weight:700}
+.navlinks a{transition:color .2s}
+.navlinks a:hover{color:#8bdcff}
+.menu{display:none;border:0;background:none;color:white;font-size:25px;cursor:pointer}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:112px 0 75px;background:radial-gradient(ellipse at 12% 10%,#204b7b77,transparent 42%),radial-gradient(ellipse at 90% 55%,#174a8b50,transparent 42%),linear-gradient(135deg,#080e1c,#0b1729 62%,#091324)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}
+.hero:after{content:"";position:absolute;z-index:-1;width:500px;height:500px;right:-190px;top:-220px;border:1px solid #78caff20;border-radius:50%;box-shadow:0 0 0 50px #78caff08,0 0 0 100px #78caff05;animation:orbit 15s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:translate(-40px,130px) scale(1.08)}}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center}
+.hero-copy{animation:enter .85s ease both}
+@keyframes enter{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.hero h1{margin-top:22px}
+.hero-copy>p{max-width:570px;margin-top:25px;font-size:16px;line-height:1.9}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
+.hero-proof{display:flex;align-items:center;gap:11px;margin-top:36px;color:#a6b8cc;font-size:12px}
+.proof-dot{width:8px;height:8px;border-radius:50%;background:#4bd7a0;box-shadow:0 0 14px #4bd7a0}
+.hero-art{position:relative;min-height:440px;display:grid;place-items:center;animation:enter 1s .12s ease both}
+.art-glow{position:absolute;width:370px;height:370px;border-radius:50%;background:#1e69d52b;filter:blur(55px)}
+.art-ring{position:absolute;width:370px;height:370px;border:1px solid #79caff35;border-radius:50%;box-shadow:0 0 0 35px #77bfff08,0 0 0 70px #77bfff05;animation:slowspin 35s linear infinite}
+@keyframes slowspin{to{transform:rotate(360deg)}}
+.art-core{position:relative;width:min(390px,90%);aspect-ratio:1;border-radius:32px;border:1px solid #91caff3b;background:linear-gradient(145deg,#142b49dd,#0b1728ee);box-shadow:0 35px 100px #0008,inset 0 1px #ffffff16;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.art-core:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#5a9eff13,transparent 50%),radial-gradient(circle at 50% 40%,#367bce25,transparent 55%)}
+.network{position:absolute;inset:10%;width:80%;height:80%;opacity:.9}
+.art-center{position:relative;z-index:2;width:105px;height:105px;border-radius:28px;display:grid;place-items:center;background:linear-gradient(145deg,#347df4,#16458e);border:1px solid #a5d7ff88;box-shadow:0 0 55px #398aff66}
+.art-center svg{width:57px;height:57px}
+.art-chip{position:absolute;z-index:3;padding:12px 15px;border:1px solid #779fc255;border-radius:12px;background:#10223beF;backdrop-filter:blur(15px);box-shadow:0 15px 38px #0006}
+.art-chip strong{display:block;font-size:12px;color:#f3f8ff}
+.art-chip span{display:block;font-size:10px;color:#9fc9ed;margin-top:2px}
+.chip-one{top:12%;left:-3%;animation:float 5s ease-in-out infinite}
+.chip-two{right:-5%;top:40%;animation:float 5.5s .5s ease-in-out infinite}
+.chip-three{bottom:10%;left:8%;animation:float 6s .8s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-9px)}}
+.hero-ribbon{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:65px;padding-top:24px;border-top:1px solid var(--line)}
+.hero-ribbon span{font-size:10px;color:#9aacc1;letter-spacing:1.5px;font-weight:800}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
-.service-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#14243a,#0e1929);border:1px solid var(--line);border-radius:var(--radius);padding:29px;transition:.25s}
-.service-card:hover{transform:translateY(-6px);border-color:#559dff80;box-shadow:0 18px 50px #0004}
-.service-icon{width:51px;height:51px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,#347dfd35,#66d2ff18);border:1px solid #65b8ff40;color:#79d5ff;font-size:23px;margin-bottom:23px}
-.service-card h3{font-size:20px;margin-bottom:11px}
-.service-card p{font-size:14px;line-height:1.8}
-.card-link{display:inline-flex;margin-top:20px;color:#7fcaff;font-size:13px;font-weight:800}
-.industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.industry-card{position:relative;min-height:175px;overflow:hidden;border:1px solid var(--line);border-radius:15px;background:#101e31;display:flex;align-items:flex-end;padding:22px;transition:.25s}
-.industry-card:hover{transform:translateY(-4px);border-color:#68bfff80}
-.industry-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.30;transition:.3s}
-.industry-card:hover img{opacity:.48;transform:scale(1.05)}
-.industry-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07111ff5,#07111f20)}
+.service-card{position:relative;overflow:hidden;padding:31px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,#14243a,#0c192a);transition:.35s}
+.service-card:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#8bd6ff,transparent);opacity:0;transition:.3s}
+.service-card:hover{transform:translateY(-8px);border-color:#68baff77;box-shadow:0 22px 55px #0005,0 0 25px #347cff12}
+.service-card:hover:before{opacity:1}
+.icon-box{width:52px;height:52px;display:grid;place-items:center;border:1px solid #68baff55;border-radius:15px;background:linear-gradient(145deg,#347dfd35,#66d2ff12);color:#8bdcff;margin-bottom:24px}
+.icon-box svg{width:25px;height:25px}
+.service-card h3{font-size:19px;margin-bottom:12px}
+.service-card p{font-size:13px;line-height:1.85}
+.card-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:#8bd5ff;font-size:12px;font-weight:800}
+.industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.industry-card{position:relative;min-height:190px;display:flex;align-items:flex-end;padding:24px;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#142944,#0d192a);transition:.35s}
+.industry-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 15%,#438dff35,transparent 45%),linear-gradient(135deg,transparent,#07111e99)}
+.industry-card:after{content:"";position:absolute;width:130px;height:130px;right:-40px;top:-45px;border:1px solid #80caff25;border-radius:50%;box-shadow:0 0 0 18px #80caff08,0 0 0 38px #80caff05;transition:.4s}
+.industry-card:hover{transform:translateY(-5px);border-color:#6abaff70;box-shadow:0 18px 45px #0005}
+.industry-card:hover:after{transform:scale(1.2)}
 .industry-content{position:relative;z-index:1}
-.industry-number{color:#7acbff;font-size:11px;font-weight:800;letter-spacing:2px}
-.industry-card h3{font-size:19px;margin-top:4px}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.why-image{height:480px;width:100%;object-fit:cover;border-radius:19px;border:1px solid var(--line)}
-.why-copy>p{margin:17px 0 27px;font-size:15px}
-.benefit-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.industry-number{font-size:10px;letter-spacing:2px;color:#82ceff;font-weight:800}
+.industry-card h3{font-size:19px;margin-top:7px}
+.industry-icon{position:absolute;right:22px;top:22px;color:#8bcfff;opacity:.8}
+.industry-icon svg{width:29px;height:29px}
+.why-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:65px;align-items:center}
+.why-art{position:relative;min-height:420px;border:1px solid #6b9bc744;border-radius:22px;overflow:hidden;background:radial-gradient(circle at 50% 45%,#23528b88,transparent 50%),linear-gradient(145deg,#142b48,#0a1627);display:grid;place-items:center}
+.why-art:before,.why-art:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #8acaff24;border-radius:50%;box-shadow:0 0 0 30px #8acaff07,0 0 0 65px #8acaff05}
+.why-art:after{width:170px;height:170px}
+.why-emblem{position:relative;z-index:1;width:110px;height:110px;display:grid;place-items:center;border-radius:30px;background:linear-gradient(145deg,#397fff,#153e7e);box-shadow:0 0 65px #438bff77;border:1px solid #b0dcff66}
+.why-emblem svg{width:60px;height:60px}
+.why-copy>p{margin:19px 0 28px;font-size:14px;line-height:1.9}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .benefit{display:flex;gap:12px;align-items:flex-start}
-.check{width:24px;height:24px;flex:0 0 24px;display:grid;place-items:center;border-radius:50%;background:#3c91ff22;color:#7ccfff;font-weight:900}
-.benefit h3{font-size:14px;margin-bottom:4px}
-.benefit p{font-size:12px;line-height:1.6}
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.process-card{padding:25px 20px;border:1px solid var(--line);background:#101d2d;border-radius:14px}
-.process-number{font-size:12px;letter-spacing:2px;color:#70caff;font-weight:800}
-.process-card h3{font-size:19px;margin:15px 0 8px}
-.process-card p{font-size:13px}
-.cta-band{padding:55px;border-radius:22px;border:1px solid #5e9eff45;background:radial-gradient(ellipse at 90% 0%,#286bd65c,transparent 45%),linear-gradient(110deg,#112440,#0d1b2d)}
+.check{flex:0 0 24px;width:24px;height:24px;display:grid;place-items:center;border:1px solid #5aaaff55;border-radius:50%;background:#3c91ff22;color:#8bd5ff;font-weight:900;font-size:12px}
+.benefit h3{font-size:13px;margin-bottom:4px}
+.benefit p{font-size:11px;line-height:1.7}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.process-card{padding:25px 21px;border:1px solid var(--line);border-radius:16px;background:#101d2d;transition:.3s}
+.process-card:hover{transform:translateY(-6px);border-color:#66baff66}
+.process-no{color:#78caff;font-size:10px;letter-spacing:2px;font-weight:800}
+.process-card h3{font-size:18px;margin:14px 0 8px}
+.process-card p{font-size:12px;line-height:1.8}
+.cta-band{position:relative;overflow:hidden;padding:54px;border:1px solid #5e9eff45;border-radius:22px;background:radial-gradient(ellipse at 90% 0%,#286bd65c,transparent 45%),linear-gradient(110deg,#112440,#0d1b2d);box-shadow:0 25px 70px #0003}
 .cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
-.cta-band h2{font-size:clamp(27px,4vw,39px)}
-.cta-band p{margin-top:10px;font-size:14px}
-.faq{max-width:830px;margin:auto}
-details{border-bottom:1px solid var(--line);padding:21px 4px}
-summary{cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:15px}
-summary:after{content:"+";color:var(--cyan);font-size:21px}
+.cta-band h2{font-size:clamp(28px,4vw,40px);margin-top:12px;max-width:650px}
+.cta-band p{margin-top:11px;font-size:13px}
+.faq{max-width:850px;margin:auto}
+details{border-bottom:1px solid var(--line);padding:21px 12px;transition:background .25s}
+details[open]{background:#ffffff06;border-radius:10px}
+summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:15px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--cyan);font-size:21px;line-height:1}
 details[open] summary:after{content:"−"}
-details p{padding-top:13px;font-size:14px;max-width:740px}
-.contact{background:radial-gradient(ellipse at 50% 0%,#173d6a66,transparent 55%),#091321}
-.form-wrap{max-width:850px;margin:auto;background:linear-gradient(145deg,#14243a,#0e1928);border:1px solid #45617f66;padding:35px;border-radius:19px;box-shadow:0 25px 70px #0004}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+details p{padding-top:13px;font-size:13px;max-width:740px;line-height:1.85}
+.contact-section{background:radial-gradient(ellipse at 50% 0%,#173d6a66,transparent 55%),#091321}
+.contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}
+.contact-copy{padding:20px 0}
+.contact-copy h2{margin:16px 0}
+.contact-copy>p{font-size:14px;line-height:1.9}
+.contact-methods{display:grid;gap:13px;margin-top:28px}
+.contact-method{display:flex;align-items:center;gap:13px;padding:15px;border:1px solid var(--line);border-radius:13px;background:#ffffff05}
+.contact-method-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:11px;background:#2e73dc2b;color:#8bd5ff;font-size:19px}
+.contact-method strong{display:block;font-size:12px}
+.contact-method small{display:block;color:#9aacc1;font-size:11px;margin-top:2px}
+.form-wrap{padding:32px;border:1px solid #45617f66;border-radius:20px;background:linear-gradient(145deg,#14243a,#0e1928);box-shadow:0 25px 70px #0004}
+.form-title{font-family:Manrope;font-size:20px;font-weight:800;margin-bottom:5px}
+.form-subtitle{font-size:12px;margin-bottom:24px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
 .field{display:flex;flex-direction:column;gap:7px}
 .field.full{grid-column:1/-1}
-label{font-size:12px;color:#d6e3f4;font-weight:700}
-input,select,textarea{width:100%;background:#091525;border:1px solid #314b68;border-radius:8px;padding:13px 14px;color:white;font:inherit;font-size:14px;outline:none}
+label{font-size:11px;color:#d6e3f4;font-weight:700}
+input,select,textarea{width:100%;background:#091525;border:1px solid #314b68;border-radius:9px;padding:13px 14px;color:white;font-size:13px;outline:none;transition:.25s}
 input:focus,select:focus,textarea:focus{border-color:#64c7ff;box-shadow:0 0 0 3px #4daaff18}
-input::placeholder,textarea::placeholder{color:#6f829b}
+input::placeholder,textarea::placeholder{color:#71849c}
 select option{background:#101d30}
-textarea{min-height:115px;resize:vertical}
-.consent{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:12px;font-weight:400}
+textarea{min-height:110px;resize:vertical}
+.consent{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:11px;font-weight:400;line-height:1.6}
 .consent input{width:auto;margin-top:4px}
 .hp{position:absolute;left:-9999px}
-.form-note{font-size:11px;color:#8ea1b8;margin-top:12px}
-#formStatus{margin-top:15px;font-size:13px;font-weight:700;color:#83d3ff}
-footer{padding:34px 0;background:#060c15;border-top:1px solid var(--line)}
-.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.footer-row p,.footer-links{font-size:12px;color:#899bb2}
-.footer-links{display:flex;gap:20px}
+.form-note{font-size:10px;color:#8ea1b8;margin-top:12px}
+#formStatus{margin-top:13px;font-size:12px;font-weight:700;color:#83d3ff}
+#submitBtn:disabled{opacity:.65;cursor:wait}
+footer{padding:35px 0;background:#060c15;border-top:1px solid var(--line)}
+.footer-row{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+.footer-row p,.footer-links{font-size:11px;color:#899bb2}
+.footer-links{display:flex;gap:19px;flex-wrap:wrap}
 .footer-links a:hover{color:white}
-@media(max-width:900px){
- .hero-grid{grid-template-columns:1fr;gap:45px}
- .hero-visual{max-width:650px}
- .hero-photo{height:370px}
- .why-grid{gap:30px}
- .process-grid{grid-template-columns:1fr 1fr}
+.footer-legal{display:flex;gap:15px;font-size:11px;color:#899bb2}
+#progress{position:fixed;top:0;left:0;width:0;height:3px;z-index:9999;background:linear-gradient(90deg,#4388ff,#83e1ff);box-shadow:0 0 12px #59baff}
+.contact-dock{position:fixed;z-index:500;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px}
+.dock-link{display:flex;align-items:center;justify-content:center;gap:9px;min-height:47px;padding:11px 16px;border-radius:30px;color:white;font-size:12px;font-weight:800;box-shadow:0 8px 28px #0006;transition:.25s}
+.dock-link:hover{transform:translateY(-4px);box-shadow:0 14px 35px #0007}
+.dock-wa{background:#159e68}
+.dock-email{background:linear-gradient(110deg,#3479ed,#2559bd)}
+.dock-link span{font-size:17px}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:950px){
+ .hero-grid{grid-template-columns:1fr;gap:35px}
+ .hero-copy{max-width:750px}
+ .hero-art{min-height:390px}
+ .why-grid{gap:35px}
+ .contact-layout{grid-template-columns:1fr}
+ .contact-copy{max-width:650px}
+ .process-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:720px){
  header{height:70px}
@@ -218,281 +199,71 @@ footer{padding:34px 0;background:#060c15;border-top:1px solid var(--line)}
  .navlinks.open{display:flex}
  .menu{display:block}
  .nav>.btn{display:none}
- .hero{padding:75px 0 65px}
- .hero-photo{height:310px}
- .floating-card{left:10px;bottom:12px}
- .visual-tag{right:10px}
- .hero-bottom{margin-top:50px}
- .section{padding:75px 0}
+ .hero{padding:75px 0 55px}
+ .hero-art{min-height:340px}
+ .art-core{width:min(330px,88%)}
+ .art-ring{width:310px;height:310px}
+ .chip-one{left:0}
+ .chip-two{right:0}
+ .section{padding:78px 0}
  .service-grid{grid-template-columns:1fr 1fr}
  .industry-grid{grid-template-columns:1fr 1fr}
  .why-grid{grid-template-columns:1fr}
- .why-image{height:320px}
- .cta-band{padding:30px}
+ .why-art{min-height:300px}
+ .cta-band{padding:32px}
  .cta-band-inner{align-items:flex-start;flex-direction:column}
+ .contact-dock{right:12px;bottom:13px;gap:8px}
+ .dock-link{min-height:44px;padding:10px 13px;font-size:11px}
 }
 @media(max-width:520px){
- h1{letter-spacing:-2px}
- .service-grid,.industry-grid,.process-grid,.benefit-list,.form-grid{grid-template-columns:1fr}
+ h1{letter-spacing:-2.5px}
+ .service-grid,.industry-grid,.process-grid,.benefits,.form-grid{grid-template-columns:1fr}
  .field.full{grid-column:auto}
- .hero-photo{height:270px}
- .hero-copy>p{font-size:15px}
- .hero-bottom{gap:13px}
- .hero-bottom span{font-size:10px}
+ .hero-art{min-height:300px}
+ .art-core{width:270px}
+ .art-ring{width:265px;height:265px}
+ .art-chip{padding:9px 11px}
+ .art-chip strong{font-size:10px}
+ .art-chip span{font-size:9px}
+ .hero-copy>p{font-size:14px}
+ .hero-ribbon{gap:13px}
+ .hero-ribbon span{font-size:9px}
  .form-wrap{padding:21px}
  .footer-row{align-items:flex-start;flex-direction:column}
+ .footer-links{gap:13px}
 }
-
-
-/* ===== BUYUSALEAD PREMIUM EXPERIENCE ===== */
-:root {
- --blue:#4388ff;
- --cyan:#78ddff;
- --glass:rgba(18,35,57,.78);
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+ .js .reveal{opacity:1;transform:none}
 }
-html { scroll-behavior:smooth; }
-body {
- background:
- radial-gradient(ellipse at 50% -20%,#17375d33,transparent 48%),
- var(--bg);
-}
-::selection { background:#4388ff66;color:white; }
-
-header {
- background:rgba(5,12,23,.82);
- backdrop-filter:blur(22px);
- -webkit-backdrop-filter:blur(22px);
- transition:background .3s,border-color .3s;
-}
-.logo { transition:transform .3s; }
-.logo:hover { transform:translateY(-2px); }
-
-.btn {
- position:relative;
- isolation:isolate;
- overflow:hidden;
- background:linear-gradient(110deg,#3678f7,#2462d5,#438cff);
- background-size:200% 100%;
- transition:transform .3s,box-shadow .3s,background-position .5s;
-}
-.btn:before {
- content:"";
- position:absolute;
- z-index:-1;
- top:-60%;
- left:-80%;
- width:45%;
- height:220%;
- transform:rotate(25deg);
- background:linear-gradient(90deg,transparent,#ffffff55,transparent);
- transition:left .7s;
-}
-.btn:hover:before { left:140%; }
-.btn:hover {
- background-position:100% 0;
- transform:translateY(-4px);
- box-shadow:0 15px 42px #347cff55;
-}
-.btn-outline { transition:.3s; }
-.btn-outline:hover { transform:translateY(-3px);box-shadow:0 10px 30px #4b9bff20; }
-
-.hero {
- isolation:isolate;
- background:
- radial-gradient(ellipse at 12% 12%,#245a9b55,transparent 42%),
- radial-gradient(ellipse at 90% 60%,#176bc955,transparent 40%),
- linear-gradient(135deg,#070e1c,#0b192b 58%,#081426);
-}
-.hero:after {
- content:"";
- position:absolute;
- z-index:-1;
- width:420px;
- height:420px;
- right:-160px;
- top:-180px;
- border-radius:50%;
- border:1px solid #80c9ff20;
- box-shadow:0 0 0 45px #80c9ff08,0 0 0 90px #80c9ff05;
- animation:orbitGlow 12s ease-in-out infinite alternate;
- pointer-events:none;
-}
-@keyframes orbitGlow {
- from { transform:translateY(0) scale(.92);opacity:.45; }
- to { transform:translateY(100px) scale(1.12);opacity:1; }
-}
-.hero-copy { animation:heroEnter .85s ease both; }
-.hero-visual { animation:heroEnter 1s .15s ease both; }
-@keyframes heroEnter {
- from { opacity:0;transform:translateY(24px); }
- to { opacity:1;transform:translateY(0); }
-}
-.hero-photo {
- transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s;
-}
-.hero-visual:hover .hero-photo {
- transform:scale(1.025);
- filter:saturate(1.05);
-}
-.floating-card {
- animation:floatCard 5s ease-in-out infinite;
-}
-@keyframes floatCard {
- 0%,100% { transform:translateY(0); }
- 50% { transform:translateY(-9px); }
-}
-.visual-tag { box-shadow:0 8px 35px #0005; }
-
-.section-head h2 { text-wrap:balance; }
-.service-card,.process-card,.industry-card {
- transition:transform .35s cubic-bezier(.2,.7,.2,1),
- border-color .35s,box-shadow .35s;
-}
-.service-card {
- background:linear-gradient(145deg,rgba(24,43,68,.96),rgba(10,22,38,.96));
-}
-.service-card:before {
- content:"";
- position:absolute;
- top:0;left:0;right:0;height:1px;
- background:linear-gradient(90deg,transparent,#80caff99,transparent);
- opacity:0;transition:opacity .3s;
-}
-.service-card:hover:before { opacity:1; }
-.service-card:hover,.process-card:hover {
- transform:translateY(-8px);
- border-color:#69baff88;
- box-shadow:0 22px 55px #0005,0 0 25px #347cff12;
-}
-.service-icon {
- transition:transform .35s,box-shadow .35s;
-}
-.service-card:hover .service-icon {
- transform:rotate(-7deg) scale(1.08);
- box-shadow:0 0 28px #4388ff35;
-}
-.industry-card {
- box-shadow:0 12px 35px #0002;
-}
-.industry-card:hover {
- box-shadow:0 20px 48px #0006,0 0 22px #4388ff19;
-}
-.industry-card img { transition:transform .7s,opacity .4s; }
-.industry-card:hover img { transform:scale(1.09);opacity:.55; }
-
-.form-wrap {
- background:linear-gradient(145deg,rgba(22,40,64,.96),rgba(10,22,37,.98));
- box-shadow:0 30px 90px #0005,0 0 45px #327fff0a;
-}
-input,select,textarea {
- transition:border-color .25s,box-shadow .25s,background .25s;
-}
-input:focus,select:focus,textarea:focus {
- background:#0c1c30;
- border-color:#75caff;
- box-shadow:0 0 0 4px #4daaff20,0 0 22px #4daaff12;
-}
-#submitBtn:disabled { opacity:.65;cursor:wait;transform:none; }
-
-.cta-band {
- position:relative;
- overflow:hidden;
- box-shadow:0 25px 70px #0003;
-}
-.cta-band:after {
- content:"";
- position:absolute;
- width:260px;height:260px;
- right:-100px;bottom:-180px;
- border:1px solid #8acaff35;
- border-radius:50%;
- box-shadow:0 0 0 30px #8acaff08,0 0 0 65px #8acaff06;
- pointer-events:none;
-}
-details { transition:background .25s;padding-left:12px;padding-right:12px; }
-details[open] { background:#ffffff06;border-radius:10px; }
-summary:hover { color:#91d8ff; }
-
-#scrollProgress {
- position:fixed;
- top:0;left:0;
- height:3px;width:0;
- z-index:9999;
- background:linear-gradient(90deg,#4388ff,#80e2ff);
- box-shadow:0 0 12px #59baff;
-}
-.contact-dock {
- position:fixed;
- z-index:500;
- right:22px;
- bottom:24px;
- display:flex;
- flex-direction:column;
- gap:11px;
-}
-.contact-float {
- display:flex;
- align-items:center;
- justify-content:center;
- gap:9px;
- min-width:48px;
- min-height:48px;
- padding:12px 17px;
- border-radius:30px;
- color:white;
- font-size:13px;
- font-weight:800;
- box-shadow:0 8px 28px #0006;
- transition:transform .25s,box-shadow .25s;
-}
-.contact-float:hover {
- transform:translateY(-4px) scale(1.03);
- box-shadow:0 14px 35px #0007;
-}
-.whatsapp-float { background:#159e68; }
-.email-float { background:linear-gradient(110deg,#3479ed,#2559bd); }
-.contact-float span { font-size:17px; }
-.js .reveal {
- opacity:0;
- transform:translateY(25px);
- transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);
-}
-.js .reveal.visible {
- opacity:1;
- transform:translateY(0);
-}
-@media(max-width:720px) {
- .contact-dock { right:13px;bottom:15px;gap:9px; }
- .contact-float { min-width:46px;min-height:46px;padding:11px 14px;font-size:12px; }
- .hero:after { width:260px;height:260px; }
-}
-@media(prefers-reduced-motion:reduce) {
- *,*:before,*:after {
-  scroll-behavior:auto!important;
-  animation-duration:.01ms!important;
-  animation-iteration-count:1!important;
-  transition-duration:.01ms!important;
- }
- .js .reveal { opacity:1;transform:none; }
-}
-
 </style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"BuyUsaLead",
+ "url":"https://akingstar.github.io/buyusalead/",
+ "email":"Simplequotesolution@zohomail.in",
+ "description":"US-focused lead generation and pay-per-call campaign solutions."
+}
+</script>
 </head>
-
 <body>
-<div id="scrollProgress" aria-hidden="true"></div>
+<div id="progress"></div>
+
 <header>
  <div class="container nav">
-  <a class="logo" href="#home">Buy<span class="logo-blue">Usa</span>Lead<small>LEAD GENERATION · PAY PER CALL</small></a>
+  <a class="logo" href="#home" aria-label="BuyUsaLead home">
+   <span class="logo-mark">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17.5 10 6l4 7 2-3 4 7.5H4Z"/><path d="M8 17.5h12"/></svg>
+   </span>
+   <span class="logo-name">Buy<span>Usa</span>Lead<small>LEAD GENERATION · PAY PER CALL</small></span>
+  </a>
   <nav class="navlinks" id="navlinks">
-   <a href="#solutions">Solutions</a>
-   <a href="#industries">Industries</a>
-   <a href="#why">Why Us</a>
-   <a href="#process">How It Works</a>
-   <a href="#faq">FAQ</a>
+   <a href="#solutions">Solutions</a><a href="#industries">Industries</a><a href="#why">Why Us</a><a href="#process">Process</a><a href="#faq">FAQ</a>
   </nav>
-  <a class="btn" href="#contact">Become a Buyer <span>↗</span></a>
-  <button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
+  <a class="btn" href="#contact">Become a Buyer <span class="arrow">↗</span></a>
+  <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
  </div>
 </header>
 
@@ -501,181 +272,195 @@ summary:hover { color:#91d8ff; }
  <div class="container">
   <div class="hero-grid">
    <div class="hero-copy">
-    <div class="eyebrow">US Lead Generation & Pay-Per-Call</div>
-    <h1>Better Leads.<br><span class="gradient-text">Stronger Connections.</span><br>Real Growth.</h1>
-    <p>Build your customer pipeline with targeted US lead generation and qualified call campaigns. Flexible acquisition solutions designed around your business objectives.</p>
+    <div class="eyebrow">US Market Acquisition Solutions</div>
+    <h1>Premium Leads.<br><span class="gradient">Qualified Calls.</span><br>Real Growth.</h1>
+    <p>Build your customer pipeline with US-focused lead generation and pay-per-call campaign solutions. Clear targeting, aligned qualification requirements and a partner focused on your campaign objectives.</p>
     <div class="hero-actions">
-     <a class="btn" href="#contact">Request Buyer Access <span>→</span></a>
-     <a class="btn-outline" href="#solutions">Explore Solutions</a>
+     <a class="btn" href="#contact">Request Buyer Access <span class="arrow">→</span></a>
+     <a class="btn-ghost" href="#solutions">Explore Solutions <span class="arrow">↘</span></a>
     </div>
-    <div class="trustline"><span class="trust-dot"></span> Built for businesses targeting the US market</div>
+    <div class="hero-proof"><span class="proof-dot"></span> Built for businesses targeting the United States</div>
    </div>
-   <div class="hero-visual">
-    <img class="hero-photo" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="Business team collaborating in a modern office" fetchpriority="high">
-    <div class="photo-overlay"></div>
-    <div class="visual-tag">GROW WITH CONFIDENCE</div>
-    <div class="floating-card"><strong>One growth partner.</strong><span>Leads · Calls · Campaign Support</span></div>
+
+   <div class="hero-art" aria-label="Abstract connected acquisition network illustration">
+    <div class="art-glow"></div><div class="art-ring"></div>
+    <div class="art-core">
+     <svg class="network" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+      <g stroke="#75caff" stroke-opacity=".36" stroke-width="1.5">
+       <path d="M200 200 75 95M200 200 320 90M200 200 345 265M200 200 90 310M75 95 320 90M320 90 345 265M345 265 90 310M90 310 75 95"/>
+       <path d="M75 95 200 45 320 90M90 310 200 355 345 265" stroke-dasharray="5 8"/>
+      </g>
+      <g fill="#80d7ff">
+       <circle cx="75" cy="95" r="7"/><circle cx="320" cy="90" r="7"/><circle cx="345" cy="265" r="7"/><circle cx="90" cy="310" r="7"/><circle cx="200" cy="45" r="5"/><circle cx="200" cy="355" r="5"/>
+      </g>
+      <g fill="#4388ff" fill-opacity=".16" stroke="#8bdcff" stroke-opacity=".45">
+       <circle cx="75" cy="95" r="17"/><circle cx="320" cy="90" r="17"/><circle cx="345" cy="265" r="17"/><circle cx="90" cy="310" r="17"/>
+      </g>
+     </svg>
+     <div class="art-center">
+      <svg viewBox="0 0 64 64" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 44 25 15l10 19 7-11 12 21H10Z"/><path d="M18 44h36"/><path d="m39 15 5 5 9-10"/></svg>
+     </div>
+    </div>
+    <div class="art-chip chip-one"><strong>Lead Generation</strong><span>Targeted buyer inquiries</span></div>
+    <div class="art-chip chip-two"><strong>Pay-Per-Call</strong><span>Call campaign solutions</span></div>
+    <div class="art-chip chip-three"><strong>Campaign Alignment</strong><span>Requirements before launch</span></div>
    </div>
   </div>
-  <div class="hero-bottom">
-   <span>LEAD GENERATION</span><span>PAY-PER-CALL</span><span>CAMPAIGN SUPPORT</span><span>US MARKET FOCUS</span>
+  <div class="hero-ribbon">
+   <span>LEAD GENERATION</span><span>PAY-PER-CALL</span><span>US MARKET FOCUS</span><span>CAMPAIGN SUPPORT</span>
   </div>
  </div>
 </section>
 
 <section class="section" id="solutions">
  <div class="container">
-  <div class="section-head">
+  <div class="section-head reveal">
    <div class="eyebrow">Our Solutions</div>
-   <h2>Acquisition solutions built around <span class="gradient-text">your goals.</span></h2>
-   <p>Choose the model that fits your business, your audience and your campaign requirements.</p>
+   <h2>Acquisition built around <span class="gradient">your objectives.</span></h2>
+   <p>Choose the acquisition model that fits your audience, campaign requirements and business goals.</p>
   </div>
   <div class="service-grid">
-   <article class="service-card">
-    <div class="service-icon">◈</div>
+   <article class="service-card reveal">
+    <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5M8 17h3"/></svg></div>
     <h3>Lead Generation</h3>
-    <p>Connect with prospective customers through campaigns built around your selected vertical, geography and qualification criteria.</p>
-    <a class="card-link" href="#contact">Discuss lead campaigns →</a>
+    <p>Connect with prospective customers through campaigns shaped around your selected vertical, geography and qualification criteria.</p>
+    <a class="card-link" href="#contact">Discuss lead campaigns <span>→</span></a>
    </article>
-   <article class="service-card">
-    <div class="service-icon">⌕</div>
+   <article class="service-card reveal">
+    <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-3 2a15 15 0 0 0 5 5l2-3 5 2v4c0 1-1 2-2 2C9 21 3 15 3 6c0-1 1-2 2-2Z"/></svg></div>
     <h3>Pay-Per-Call</h3>
-    <p>Explore inbound call campaigns with agreed targeting, qualification requirements and call duration expectations.</p>
-    <a class="card-link" href="#contact">Discuss call campaigns →</a>
+    <p>Explore call acquisition campaigns with agreed targeting, qualification requirements and call duration expectations.</p>
+    <a class="card-link" href="#contact">Discuss call campaigns <span>→</span></a>
    </article>
-   <article class="service-card">
-    <div class="service-icon">↗</div>
+   <article class="service-card reveal">
+    <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 17 10 11l4 4 6-8"/><path d="M14 7h6v6"/></svg></div>
     <h3>Custom Campaigns</h3>
-    <p>Combine lead and call acquisition options around your campaign objectives, market requirements and expected volume.</p>
-    <a class="card-link" href="#contact">Build a campaign →</a>
+    <p>Bring lead and call acquisition together around your campaign objectives, market requirements and expected volume.</p>
+    <a class="card-link" href="#contact">Build a campaign <span>→</span></a>
    </article>
   </div>
  </div>
 </section>
 
-<section class="section section-dark" id="industries">
+<section class="section section-alt" id="industries">
  <div class="container">
-  <div class="section-head">
+  <div class="section-head reveal">
    <div class="eyebrow">Industries We Serve</div>
-   <h2>Focused on high-intent <span class="gradient-text">verticals.</span></h2>
-   <p>Tell us which market you want to reach and the requirements your business needs.</p>
+   <h2>Focused on high-intent <span class="gradient">verticals.</span></h2>
+   <p>Tell us which market you want to reach and the campaign requirements your business needs.</p>
   </div>
   <div class="industry-grid">
-   <article class="industry-card">
-    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=650&q=75" alt="Modern automobile" loading="lazy">
-    <div class="industry-content"><div class="industry-number">01 / INSURANCE</div><h3>Auto Insurance</h3></div>
-   </article>
-   <article class="industry-card">
-    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=650&q=75" alt="Healthcare professional" loading="lazy">
-    <div class="industry-content"><div class="industry-number">02 / HEALTH</div><h3>Health Insurance</h3></div>
-   </article>
-   <article class="industry-card">
-    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=650&q=75" alt="Family spending time together" loading="lazy">
-    <div class="industry-content"><div class="industry-number">03 / LIFE</div><h3>Final Expense</h3></div>
-   </article>
-   <article class="industry-card">
-    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=650&q=75" alt="Professional reviewing documents" loading="lazy">
-    <div class="industry-content"><div class="industry-number">04 / BENEFITS</div><h3>SSDI</h3></div>
-   </article>
-   <article class="industry-card">
-    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=650&q=75" alt="Financial planning documents" loading="lazy">
-    <div class="industry-content"><div class="industry-number">05 / FINANCIAL</div><h3>Debt Relief</h3></div>
-   </article>
-   <article class="industry-card">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=650&q=75" alt="Modern residential home" loading="lazy">
-    <div class="industry-content"><div class="industry-number">06 / HOME</div><h3>Home Services</h3></div>
-   </article>
+   <article class="industry-card reveal"><div class="industry-icon">01</div><div class="industry-content"><div class="industry-number">INSURANCE</div><h3>Auto Insurance</h3></div></article>
+   <article class="industry-card reveal"><div class="industry-icon">02</div><div class="industry-content"><div class="industry-number">HEALTH</div><h3>Health Insurance</h3></div></article>
+   <article class="industry-card reveal"><div class="industry-icon">03</div><div class="industry-content"><div class="industry-number">LIFE</div><h3>Final Expense</h3></div></article>
+   <article class="industry-card reveal"><div class="industry-icon">04</div><div class="industry-content"><div class="industry-number">BENEFITS</div><h3>SSDI</h3></div></article>
+   <article class="industry-card reveal"><div class="industry-icon">05</div><div class="industry-content"><div class="industry-number">FINANCIAL</div><h3>Debt Relief</h3></div></article>
+   <article class="industry-card reveal"><div class="industry-icon">06</div><div class="industry-content"><div class="industry-number">HOME</div><h3>Home Services</h3></div></article>
   </div>
  </div>
 </section>
 
 <section class="section" id="why">
  <div class="container why-grid">
-  <div>
-   <img class="why-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=85" alt="Business team discussing campaign strategy" loading="lazy">
+  <div class="why-art reveal">
+   <div class="why-emblem"><svg viewBox="0 0 64 64" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 44 25 15l10 19 7-11 12 21H10Z"/><path d="M18 44h36"/></svg></div>
   </div>
-  <div class="why-copy">
-   <div class="eyebrow">Why BuyUsaLead</div>
-   <h2 style="margin-top:15px">A smarter approach to <span class="gradient-text">customer acquisition.</span></h2>
-   <p>Every campaign has different goals. We focus on understanding your requirements, aligning expectations and supporting a clear campaign process.</p>
-   <div class="benefit-list">
+  <div class="why-copy reveal">
+   <div class="eyebrow">The BuyUsaLead Approach</div>
+   <h2 style="margin-top:16px">A more considered approach to <span class="gradient">customer acquisition.</span></h2>
+   <p>Every campaign has different goals. We focus on understanding your requirements, aligning expectations and supporting a clear campaign process from initial discussion to ongoing feedback.</p>
+   <div class="benefits">
     <div class="benefit"><span class="check">✓</span><div><h3>US Market Focus</h3><p>Define the locations relevant to your campaign.</p></div></div>
     <div class="benefit"><span class="check">✓</span><div><h3>Flexible Solutions</h3><p>Leads, calls or a combination of both.</p></div></div>
     <div class="benefit"><span class="check">✓</span><div><h3>Clear Requirements</h3><p>Align qualification criteria before launch.</p></div></div>
     <div class="benefit"><span class="check">✓</span><div><h3>Campaign Support</h3><p>Communication and ongoing feedback.</p></div></div>
    </div>
-   <div style="margin-top:30px"><a class="btn" href="#contact">Talk About Your Campaign →</a></div>
+   <div style="margin-top:29px"><a class="btn" href="#contact">Talk About Your Campaign <span class="arrow">→</span></a></div>
   </div>
  </div>
 </section>
 
-<section class="section section-dark" id="process">
+<section class="section section-alt" id="process">
  <div class="container">
-  <div class="section-head">
+  <div class="section-head reveal">
    <div class="eyebrow">How It Works</div>
-   <h2>Four steps. One clear <span class="gradient-text">process.</span></h2>
+   <h2>Four steps. One clear <span class="gradient">process.</span></h2>
    <p>Start with your requirements and work towards a campaign aligned with your business goals.</p>
   </div>
   <div class="process-grid">
-   <article class="process-card"><div class="process-number">STEP 01</div><h3>Choose</h3><p>Select your vertical and tell us whether you need leads, calls or both.</p></article>
-   <article class="process-card"><div class="process-number">STEP 02</div><h3>Align</h3><p>Discuss geography, qualification criteria, volume and campaign expectations.</p></article>
-   <article class="process-card"><div class="process-number">STEP 03</div><h3>Launch</h3><p>Finalize campaign requirements and coordinate the launch process.</p></article>
-   <article class="process-card"><div class="process-number">STEP 04</div><h3>Optimize</h3><p>Review campaign feedback and identify opportunities to improve and scale.</p></article>
+   <article class="process-card reveal"><div class="process-no">STEP 01</div><h3>Choose</h3><p>Select your vertical and tell us whether you need leads, calls or both.</p></article>
+   <article class="process-card reveal"><div class="process-no">STEP 02</div><h3>Align</h3><p>Discuss geography, qualification criteria, volume and campaign expectations.</p></article>
+   <article class="process-card reveal"><div class="process-no">STEP 03</div><h3>Launch</h3><p>Finalize campaign requirements and coordinate the launch process.</p></article>
+   <article class="process-card reveal"><div class="process-no">STEP 04</div><h3>Optimize</h3><p>Review campaign feedback and identify opportunities to improve and scale.</p></article>
   </div>
  </div>
 </section>
 
 <section class="section">
  <div class="container">
-  <div class="cta-band">
+  <div class="cta-band reveal">
    <div class="cta-band-inner">
-    <div><div class="eyebrow">Ready to Get Started?</div><h2 style="margin-top:12px">Let's build your next growth campaign.</h2><p>Share your requirements and start a conversation with BuyUsaLead.</p></div>
-    <a class="btn" href="#contact">Request Buyer Access →</a>
+    <div><div class="eyebrow">Start a Conversation</div><h2>Let's build your next growth campaign.</h2><p>Share your requirements and start a conversation with BuyUsaLead.</p></div>
+    <a class="btn" href="#contact">Request Buyer Access <span class="arrow">→</span></a>
    </div>
   </div>
  </div>
 </section>
 
-<section class="section section-dark" id="faq">
+<section class="section section-alt" id="faq">
  <div class="container">
-  <div class="section-head"><div class="eyebrow">Frequently Asked Questions</div><h2>Questions? <span class="gradient-text">We've got answers.</span></h2></div>
-  <div class="faq">
+  <div class="section-head reveal"><div class="eyebrow">Frequently Asked Questions</div><h2>Questions? <span class="gradient">Let's clarify.</span></h2></div>
+  <div class="faq reveal">
    <details><summary>What does BuyUsaLead offer?</summary><p>BuyUsaLead offers lead generation and pay-per-call campaign solutions for businesses targeting US consumers.</p></details>
-   <details><summary>Can I request both leads and calls?</summary><p>Yes. Select both in the buyer inquiry form and share your campaign requirements.</p></details>
+   <details><summary>Can I request both leads and calls?</summary><p>Yes. Select Both in the buyer inquiry form and share your campaign requirements.</p></details>
    <details><summary>Which industries do you support?</summary><p>Our listed verticals include Auto Insurance, Health Insurance, Final Expense, SSDI, Debt Relief and Home Services. Availability and campaign requirements are discussed before launch.</p></details>
    <details><summary>Can I specify states and monthly volume?</summary><p>Yes. Include your target geography and estimated monthly volume in the buyer inquiry form.</p></details>
    <details><summary>How do I get started?</summary><p>Submit the buyer inquiry form. Our team can review your requirements and follow up about the next steps.</p></details>
+   <details><summary>How is my inquiry information used?</summary><p>Your information is used to review and respond to your inquiry. Please review our Privacy Policy for further details.</p></details>
   </div>
  </div>
 </section>
 
-<section class="section contact" id="contact">
+<section class="section contact-section" id="contact">
  <div class="container">
-  <div class="section-head">
+  <div class="section-head reveal">
    <div class="eyebrow">Buyer Inquiry</div>
-   <h2>Let's talk about <span class="gradient-text">your next campaign.</span></h2>
+   <h2>Let's talk about <span class="gradient">your next campaign.</span></h2>
    <p>Tell us about your business and campaign requirements. Our team can follow up to discuss the next steps.</p>
   </div>
-  <div class="form-wrap">
-   <form id="buyerForm" action="https://script.google.com/macros/s/AKfycby5mJyzVlOn8eJQoBJbQ0WQtVdDyXuPy_NqF1yhPHF9zG9qwKMlhdnYXXQviVp16Tgv/exec" method="POST" target="submitFrame">
-    <div class="hp"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
-    <div class="form-grid">
-     <div class="field"><label for="name">Full Name *</label><input id="name" name="name" required maxlength="100" autocomplete="name"></div>
-     <div class="field"><label for="company">Company Name *</label><input id="company" name="company" required maxlength="120"></div>
-     <div class="field"><label for="email">Business Email *</label><input id="email" name="email" type="email" required maxlength="150" autocomplete="email"></div>
-     <div class="field"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel" required maxlength="35" autocomplete="tel"></div>
-     <div class="field"><label for="type">Product Type *</label><select id="type" name="product_type" required><option value="">Select one</option><option>Leads</option><option>Pay-Per-Call</option><option>Both</option></select></div>
-     <div class="field"><label for="industry">Industry *</label><select id="industry" name="industry" required><option value="">Select industry</option><option>Auto Insurance</option><option>Health Insurance</option><option>Final Expense</option><option>SSDI</option><option>Debt Relief</option><option>Home Services</option><option>Other</option></select></div>
-     <div class="field"><label for="geo">Target Geography *</label><input id="geo" name="geography" placeholder="e.g. USA, Texas, Florida" required maxlength="200"></div>
-     <div class="field"><label for="volume">Estimated Monthly Volume</label><select id="volume" name="monthly_volume"><option value="">Select volume</option><option>Under 100</option><option>100–500</option><option>500–1,000</option><option>1,000–5,000</option><option>5,000+</option><option>Not sure yet</option></select></div>
-     <div class="field full"><label for="message">Campaign Requirements</label><textarea id="message" name="message" maxlength="2000" placeholder="Tell us about your targeting, qualification criteria and campaign goals..."></textarea></div>
-     <div class="field full"><label class="consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to be contacted about my inquiry. I understand my information will be used to respond to this request.</span></label></div>
-     <div class="field full"><button class="btn" id="submitBtn" type="submit">Submit Buyer Inquiry →</button></div>
+  <div class="contact-layout">
+   <div class="contact-copy reveal">
+    <div class="eyebrow">Get in Touch</div>
+    <h2>Start with a <span class="gradient">conversation.</span></h2>
+    <p>Share your campaign goals, preferred vertical and target geography. We will use the details to understand your inquiry and discuss possible next steps.</p>
+    <div class="contact-methods">
+     <a class="contact-method" href="mailto:Simplequotesolution@zohomail.in"><span class="contact-method-icon">✉</span><span><strong>Email Us</strong><small>Simplequotesolution@zohomail.in</small></span></a>
+     <a class="contact-method" href="https://wa.me/917857066061" target="_blank" rel="noopener"><span class="contact-method-icon">◉</span><span><strong>WhatsApp</strong><small>+91 78570 66061</small></span></a>
     </div>
-    <p class="form-note">Please do not submit sensitive personal, financial or medical information through this form.</p>
-    <p id="formStatus" role="status" aria-live="polite"></p>
-   </form>
-   <iframe name="submitFrame" id="submitFrame" title="Form submission" style="display:none"></iframe>
+   </div>
+   <div class="form-wrap reveal">
+    <div class="form-title">Tell us about your campaign</div>
+    <p class="form-subtitle">Fields marked * are required.</p>
+    <form id="buyerForm" action="https://script.google.com/macros/s/AKfycby5mJyzVlOn8eJQoBJbQ0WQtVdDyXuPy_NqF1yhPHF9zG9qwKMlhdnYXXQviVp16Tgv/exec" method="POST" target="submitFrame">
+     <div class="hp"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+     <div class="form-grid">
+      <div class="field"><label for="name">Full Name *</label><input id="name" name="name" required maxlength="100" autocomplete="name" placeholder="Your full name"></div>
+      <div class="field"><label for="company">Company Name *</label><input id="company" name="company" required maxlength="120" placeholder="Your company"></div>
+      <div class="field"><label for="email">Business Email *</label><input id="email" name="email" type="email" required maxlength="150" autocomplete="email" placeholder="you@company.com"></div>
+      <div class="field"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel" required maxlength="35" autocomplete="tel" placeholder="+1 000 000 0000"></div>
+      <div class="field"><label for="type">Product Type *</label><select id="type" name="product_type" required><option value="">Select one</option><option>Leads</option><option>Pay-Per-Call</option><option>Both</option></select></div>
+      <div class="field"><label for="industry">Industry *</label><select id="industry" name="industry" required><option value="">Select industry</option><option>Auto Insurance</option><option>Health Insurance</option><option>Final Expense</option><option>SSDI</option><option>Debt Relief</option><option>Home Services</option><option>Other</option></select></div>
+      <div class="field"><label for="geo">Target Geography *</label><input id="geo" name="geography" required maxlength="200" placeholder="USA, Texas, Florida..."></div>
+      <div class="field"><label for="volume">Estimated Monthly Volume</label><select id="volume" name="monthly_volume"><option value="">Select volume</option><option>Under 100</option><option>100–500</option><option>500–1,000</option><option>1,000–5,000</option><option>5,000+</option><option>Not sure yet</option></select></div>
+      <div class="field full"><label for="message">Campaign Requirements</label><textarea id="message" name="message" maxlength="2000" placeholder="Tell us about your targeting, qualification criteria and campaign goals..."></textarea></div>
+      <div class="field full"><label class="consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to be contacted about my inquiry. I understand my information will be used to respond to this request.</span></label></div>
+      <div class="field full"><button class="btn" id="submitBtn" type="submit">Submit Buyer Inquiry <span class="arrow">→</span></button></div>
+     </div>
+     <p class="form-note">Please do not submit sensitive personal, financial or medical information through this form. See our Privacy Policy.</p>
+     <p id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+    <iframe name="submitFrame" id="submitFrame" title="Form submission" style="display:none"></iframe>
+   </div>
   </div>
  </div>
 </section>
@@ -683,19 +468,61 @@ summary:hover { color:#91d8ff; }
 
 <footer>
  <div class="container footer-row">
-  <a class="logo" href="#home">Buy<span class="logo-blue">Usa</span>Lead<small>LEAD GENERATION · PAY PER CALL</small></a>
+  <a class="logo" href="#home"><span class="logo-mark">B</span><span class="logo-name">Buy<span>Usa</span>Lead<small>LEAD GENERATION · PAY PER CALL</small></span></a>
   <p>© <span id="year"></span> BuyUsaLead. All rights reserved.</p>
   <div class="footer-links"><a href="#solutions">Solutions</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>
+  <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
  </div>
 </footer>
+
+<div class="contact-dock" aria-label="Quick contact">
+ <a class="dock-link dock-wa" href="https://wa.me/917857066061?text=Hello%20BuyUsaLead%2C%20I%20am%20interested%20in%20your%20campaign%20solutions." target="_blank" rel="noopener noreferrer"><span>◉</span> WhatsApp</a>
+ <a class="dock-link dock-email" href="mailto:Simplequotesolution@zohomail.in?subject=BuyUsaLead%20Buyer%20Inquiry"><span>✉</span> Email</a>
+</div>
 
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 
 const menu=document.getElementById("menu");
 const nav=document.getElementById("navlinks");
-menu.addEventListener("click",()=>nav.classList.toggle("open"));
-nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+menu.addEventListener("click",()=>{
+ const opened=nav.classList.toggle("open");
+ menu.setAttribute("aria-expanded",String(opened));
+ menu.textContent=opened?"×":"☰";
+});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+ nav.classList.remove("open");
+ menu.setAttribute("aria-expanded","false");
+ menu.textContent="☰";
+}));
+
+document.documentElement.classList.add("js");
+const revealItems=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window){
+ const observer=new IntersectionObserver((entries,obs)=>{
+  entries.forEach(entry=>{
+   if(entry.isIntersecting){
+    entry.target.classList.add("visible");
+    obs.unobserve(entry.target);
+   }
+  });
+ },{threshold:.12,rootMargin:"0px 0px -30px 0px"});
+ revealItems.forEach(item=>observer.observe(item));
+}else{
+ revealItems.forEach(item=>item.classList.add("visible"));
+}
+
+const progress=document.getElementById("progress");
+let scrollBusy=false;
+window.addEventListener("scroll",()=>{
+ if(scrollBusy)return;
+ scrollBusy=true;
+ requestAnimationFrame(()=>{
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  progress.style.width=(max>0?window.scrollY/max*100:0)+"%";
+  scrollBusy=false;
+ });
+},{passive:true});
 
 const form=document.getElementById("buyerForm");
 const frame=document.getElementById("submitFrame");
@@ -706,11 +533,6 @@ let waiting=false;
 form.addEventListener("submit",e=>{
  if(!form.reportValidity()){e.preventDefault();return}
  if(form.elements.website.value){e.preventDefault();return}
- if(form.action.includes("PASTE_GOOGLE_APPS_SCRIPT")){
-  e.preventDefault();
-  status.textContent="The inquiry form is ready. Email and Google Sheets delivery will be activated after connecting the form.";
-  return;
- }
  waiting=true;
  submitBtn.disabled=true;
  submitBtn.textContent="Submitting...";
@@ -720,25 +542,11 @@ form.addEventListener("submit",e=>{
 frame.addEventListener("load",()=>{
  if(!waiting)return;
  waiting=false;
- status.textContent="Thank you! Your inquiry has been submitted. We will follow up with you.";
+ status.textContent="Your inquiry has been sent. If you do not receive a response, please contact us by email.";
  form.reset();
  submitBtn.disabled=false;
- submitBtn.textContent="Submit Buyer Inquiry →";
+ submitBtn.innerHTML='Submit Buyer Inquiry <span class="arrow">→</span>';
 });
 </script>
-
-<div class="contact-dock" aria-label="Contact BuyUsaLead">
- <a class="contact-float whatsapp-float"
-    href="https://wa.me/917857066061?text=Hello%20BuyUsaLead%2C%20I%20am%20interested%20in%20your%20lead%20generation%20and%20pay-per-call%20solutions."
-    target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-  <span>◉</span> WhatsApp
- </a>
- <a class="contact-float email-float"
-    href="mailto:Simplequotesolution@zohomail.in?subject=BuyUsaLead%20Buyer%20Inquiry"
-    aria-label="Email BuyUsaLead">
-  <span>✉</span> Email
- </a>
-</div>
-
 </body>
 </html>

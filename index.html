@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BuyUsaLead connects businesses with premium US leads and qualified pay-per-call opportunities.">
+<title>BuyUsaLead | Premium Leads. Qualified Calls.</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1b2d;--blue:#2788ff;--cyan:#54c5ff;--white:#f5f8ff;--muted:#a6b5c9;--line:#20344d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:850;letter-spacing:-1px}
+.logo span{color:var(--cyan)}
+.navlinks{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:14px}
+.navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(110deg,var(--blue),#1766d5);color:white;padding:13px 22px;border-radius:8px;font-weight:750;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.menu{display:none;background:none;color:white;border:0;font-size:27px}
+.hero{padding:105px 0 90px;background:radial-gradient(ellipse at 75% 20%,#123c6b 0,transparent 43%),linear-gradient(140deg,#07111f,#0a1b30)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
+.eyebrow{color:var(--cyan);font-weight:750;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.08;letter-spacing:-2.5px;margin:20px 0}
+h1 span{color:var(--cyan)}
+.hero p{font-size:18px;color:var(--muted);max-width:620px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn-outline{border:1px solid #45617e;border-radius:8px;padding:12px 21px;color:white;font-weight:700}
+.hero-card{background:linear-gradient(145deg,#112945,#0b192b);border:1px solid #294766;border-radius:18px;padding:30px;box-shadow:0 25px 80px #0005}
+.hero-card h3{font-size:20px;margin-bottom:18px}
+.metric{padding:17px 0;border-bottom:1px solid var(--line)}
+.metric:last-child{border:0}
+.metric strong{display:block;font-size:24px;color:var(--cyan)}
+.metric small{color:var(--muted)}
+section{padding:82px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.section-head h2{font-size:clamp(30px,4vw,42px);line-height:1.2;margin:12px 0}
+.section-head p,.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:25px}
+.card .symbol{font-size:27px;margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:9px}
+.card p{font-size:14px;color:var(--muted)}
+.card:hover{border-color:#397dbb;transform:translateY(-3px);transition:.2s}
+.industries{background:#0a1727}
+.industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.industry{background:#10233a;border:1px solid #203c5b;border-radius:10px;padding:19px;font-weight:700}
+.industry span{color:var(--cyan);margin-right:10px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step-no{font-size:13px;color:var(--cyan);font-weight:800;letter-spacing:1px}
+.step h3{margin:9px 0}
+.step p{font-size:14px;color:var(--muted)}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.benefit{display:flex;gap:14px;background:var(--panel);padding:20px;border:1px solid var(--line);border-radius:12px}
+.check{color:var(--cyan);font-size:20px;font-weight:900}
+.faq{max-width:820px;margin:auto}
+details{padding:20px 0;border-bottom:1px solid var(--line)}
+summary{font-weight:750;cursor:pointer}
+details p{color:var(--muted);padding-top:12px}
+.contact{background:linear-gradient(145deg,#0c2037,#081421)}
+.form-wrap{max-width:850px;margin:auto;background:var(--panel);border:1px solid var(--line);padding:30px;border-radius:16px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+label{font-size:13px;color:#d5e3f4;font-weight:700}
+input,select,textarea{width:100%;background:#081525;border:1px solid #29415c;border-radius:8px;padding:13px;color:white;font:inherit;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--cyan)}
+textarea{min-height:110px;resize:vertical}
+.consent{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:13px}
+.consent input{width:auto;margin-top:5px}
+.form-note{font-size:12px;color:var(--muted);margin-top:12px}
+#formStatus{margin-top:15px;font-weight:700}
+.hp{position:absolute;left:-9999px}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){
+ .hero-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0a1727;padding:22px;flex-direction:column;align-items:flex-start}
+ .navlinks.open{display:flex}
+ .menu{display:block}
+ .nav>.btn{display:none}
+}
+@media(max-width:560px){
+ .hero{padding:75px 0}
+ section{padding:62px 0}
+ .cards,.industry-grid,.benefits,.form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .form-wrap{padding:20px}
+ h1{letter-spacing:-1.5px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#">Buy<span>Usa</span>Lead</a>
+  <nav class="navlinks" id="navlinks">
+   <a href="#solutions">Solutions</a><a href="#industries">Industries</a>
+   <a href="#how">How It Works</a><a href="#faq">FAQ</a>
+   <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#contact">Request Buyer Access</a>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">US Lead Generation & Pay-Per-Call</div>
+   <h1>Premium Leads.<br><span>Qualified Calls.</span><br>Real Growth.</h1>
+   <p>Connect your business with targeted US leads and qualified inbound calls. Flexible campaign solutions built around your goals.</p>
+   <div class="actions">
+    <a class="btn" href="#contact">Become a Buyer →</a>
+    <a class="btn-outline" href="#solutions">Explore Solutions</a>
+   </div>
+  </div>
+  <div class="hero-card">
+   <h3>Growth-focused acquisition</h3>
+   <div class="metric"><strong>Lead Generation</strong><small>Connect with prospects matching your campaign criteria.</small></div>
+   <div class="metric"><strong>Pay-Per-Call</strong><small>Receive qualified calls aligned with your business needs.</small></div>
+   <div class="metric"><strong>Campaign Support</strong><small>Clear requirements, communication and optimization.</small></div>
+  </div>
+ </div>
+</section>
+
+<section id="solutions">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Our Solutions</div><h2>Flexible ways to grow your pipeline</h2><p>Choose the acquisition model that fits your business and campaign objectives.</p></div>
+  <div class="cards">
+   <article class="card"><div class="symbol">◈</div><h3>Lead Generation</h3><p>Reach consumers through targeted lead campaigns designed around your preferred filters, geography and volume.</p></article>
+   <article class="card"><div class="symbol">☎</div><h3>Pay-Per-Call</h3><p>Connect with prospective customers through inbound calls based on agreed campaign qualification criteria.</p></article>
+   <article class="card"><div class="symbol">↗</div><h3>Custom Campaigns</h3><p>Discuss your targeting, qualification, delivery and volume requirements with our team.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="industries" id="industries">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Industries</div><h2>Campaigns across key verticals</h2><p>Tell us which market you want to reach and what your campaign requires.</p></div>
+  <div class="industry-grid">
+   <div class="industry"><span>01</span> Auto Insurance</div>
+   <div class="industry"><span>02</span> Health Insurance</div>
+   <div class="industry"><span>03</span> Final Expense</div>
+   <div class="industry"><span>04</span> SSDI</div>
+   <div class="industry"><span>05</span> Debt Relief</div>
+   <div class="industry"><span>06</span> Home Services</div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Why BuyUsaLead</div><h2>A partner focused on your campaign goals</h2></div>
+  <div class="benefits">
+   <div class="benefit"><span class="check">✓</span><div><h3>USA-focused targeting</h3><p class="muted">Define the locations and audience criteria relevant to your campaign.</p></div></div>
+   <div class="benefit"><span class="check">✓</span><div><h3>Clear campaign alignment</h3><p class="muted">Discuss qualification rules and expectations before launch.</p></div></div>
+   <div class="benefit"><span class="check">✓</span><div><h3>Flexible delivery models</h3><p class="muted">Explore lead delivery, qualified calls or a combination of both.</p></div></div>
+   <div class="benefit"><span class="check">✓</span><div><h3>Ongoing communication</h3><p class="muted">Stay aligned on campaign performance, feedback and next steps.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="how" class="industries">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Simple Process</div><h2>From requirements to launch</h2></div>
+  <div class="steps">
+   <div class="step"><div class="step-no">STEP 01</div><h3>Choose</h3><p>Tell us your vertical and whether you need leads, calls or both.</p></div>
+   <div class="step"><div class="step-no">STEP 02</div><h3>Align</h3><p>Discuss geography, qualification criteria and expected volume.</p></div>
+   <div class="step"><div class="step-no">STEP 03</div><h3>Launch</h3><p>Finalize campaign requirements and coordinate delivery.</p></div>
+   <div class="step"><div class="step-no">STEP 04</div><h3>Optimize</h3><p>Review feedback and discuss opportunities to improve and scale.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">FAQ</div><h2>Frequently asked questions</h2></div>
+  <div class="faq">
+   <details><summary>What does BuyUsaLead offer?</summary><p>BuyUsaLead offers lead generation and pay-per-call campaign solutions for businesses targeting US consumers.</p></details>
+   <details><summary>Can I request both leads and calls?</summary><p>Yes. Select both in the inquiry form and share your campaign requirements.</p></details>
+   <details><summary>Which industries do you support?</summary><p>Our listed verticals include Auto Insurance, Health Insurance, Final Expense, SSDI, Debt Relief and Home Services. Availability and requirements are discussed before launch.</p></details>
+   <details><summary>Can I specify states and monthly volume?</summary><p>Yes. Include your target geography and estimated monthly volume in the buyer inquiry form.</p></details>
+   <details><summary>How do I get started?</summary><p>Submit the buyer inquiry form. Our team can review your requirements and follow up about next steps.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Buyer Inquiry</div><h2>Let's discuss your campaign</h2><p>Share your business details and requirements. Our team will follow up with you.</p></div>
+  <div class="form-wrap">
+   <form id="buyerForm" action="PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE" method="POST" target="submitFrame">
+    <div class="hp"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="form-grid">
+     <div class="field"><label for="name">Full Name *</label><input id="name" name="name" required maxlength="100" autocomplete="name"></div>
+     <div class="field"><label for="company">Company Name *</label><input id="company" name="company" required maxlength="120"></div>
+     <div class="field"><label for="email">Business Email *</label><input id="email" name="email" type="email" required maxlength="150" autocomplete="email"></div>
+     <div class="field"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel" required maxlength="35" autocomplete="tel"></div>
+     <div class="field"><label for="type">Product Type *</label><select id="type" name="productType" required><option value="">Select one</option><option>Leads</option><option>Pay-Per-Call</option><option>Both</option></select></div>
+     <div class="field"><label for="industry">Industry *</label><select id="industry" name="industry" required><option value="">Select industry</option><option>Auto Insurance</option><option>Health Insurance</option><option>Final Expense</option><option>SSDI</option><option>Debt Relief</option><option>Home Services</option><option>Other</option></select></div>
+     <div class="field"><label for="geo">Target Geography *</label><input id="geo" name="geography" placeholder="e.g. USA, Texas, Florida" required maxlength="200"></div>
+     <div class="field"><label for="volume">Estimated Monthly Volume</label><select id="volume" name="monthlyVolume"><option value="">Select volume</option><option>Under 100</option><option>100–500</option><option>500–1,000</option><option>1,000–5,000</option><option>5,000+</option><option>Not sure yet</option></select></div>
+     <div class="field full"><label for="message">Campaign Requirements</label><textarea id="message" name="message" maxlength="2000" placeholder="Tell us about your targeting, qualification criteria and campaign goals..."></textarea></div>
+     <div class="field full"><label class="consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to be contacted about my inquiry. I understand my information will be used to respond to this request.</span></label></div>
+     <div class="field full"><button class="btn" id="submitBtn" type="submit">Submit Buyer Inquiry →</button></div>
+    </div>
+    <p class="form-note">Please do not submit sensitive personal, financial or medical information through this form.</p>
+    <p id="formStatus" role="status" aria-live="polite"></p>
+   </form>
+   <iframe name="submitFrame" id="submitFrame" title="Form submission" style="display:none"></iframe>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-row">
+  <a class="logo" href="#">Buy<span>Usa</span>Lead</a>
+  <p>© <span id="year"></span> BuyUsaLead. All rights reserved.</p>
+  <p>Lead Generation · Pay-Per-Call</p>
+ </div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('menu').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+const form=document.getElementById('buyerForm');
+const frame=document.getElementById('submitFrame');
+const status=document.getElementById('formStatus');
+const submitBtn=document.getElementById('submitBtn');
+let waiting=false;
+form.addEventListener('submit',e=>{
+ if(!form.reportValidity()){e.preventDefault();return}
+ if(form.website.value){e.preventDefault();return}
+ if(form.action.includes('PASTE_GOOGLE_APPS_SCRIPT')){
+  e.preventDefault();
+  status.textContent='The inquiry form is ready. Form delivery will be activated after connecting Google Sheets and email.';
+  return;
+ }
+ waiting=true;
+ submitBtn.disabled=true;
+ submitBtn.textContent='Submitting...';
+ status.textContent='Submitting your inquiry...';
+});
+frame.addEventListener('load',()=>{
+ if(!waiting)return;
+ waiting=false;
+ status.textContent='Thank you! Your inquiry has been submitted. We will follow up with you.';
+ form.reset();
+ submitBtn.disabled=false;
+ submitBtn.textContent='Submit Buyer Inquiry →';
+});
+</script>
+</body>
+</html>

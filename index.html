@@ -664,6 +664,248 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
+
+
+/* BUYUSALEAD — LUXURY EDITION */
+:root {
+  --lux-ink:#101820;
+  --lux-deep:#151f28;
+  --lux-cream:#f2eee5;
+  --lux-paper:#faf8f3;
+  --lux-gold:#c5a875;
+  --lux-gold-light:#e2cca1;
+  --lux-muted:#858b91;
+}
+body {
+  background:var(--lux-cream);
+  color:var(--lux-ink);
+}
+header {
+  background:rgba(16,24,32,.97);
+  border-bottom:1px solid rgba(197,168,117,.24);
+  box-shadow:0 8px 30px rgba(0,0,0,.13);
+}
+.logo-mark {
+  background:var(--lux-gold);
+  color:var(--lux-ink);
+  border:1px solid var(--lux-gold-light);
+}
+.logo-name {color:#f5f1e8}
+.logo-name span {color:var(--lux-gold-light)}
+.logo-name small {color:#aaa18f}
+.navlinks {color:#d5d0c6}
+.navlinks a:hover {color:var(--lux-gold-light)}
+.btn {
+  background:var(--lux-gold);
+  border-color:var(--lux-gold);
+  color:#111820;
+  box-shadow:0 8px 25px rgba(197,168,117,.18);
+  font-weight:700;
+}
+.btn:hover {
+  background:var(--lux-gold-light);
+  border-color:var(--lux-gold-light);
+  color:#101820;
+  box-shadow:0 12px 28px rgba(197,168,117,.24);
+}
+.hero {
+  background:
+    radial-gradient(ellipse at 82% 42%,rgba(197,168,117,.17),transparent 40%),
+    linear-gradient(115deg,#101820 0%,#1a2731 55%,#101820 100%);
+}
+.hero:before {
+  background-image:
+    linear-gradient(rgba(197,168,117,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(197,168,117,.045) 1px,transparent 1px);
+}
+.hero:after {border-color:rgba(197,168,117,.18)}
+.hero .gradient {
+  background:linear-gradient(100deg,#f5f0e6 5%,#e2cca1 60%,#b99458 100%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.eyebrow {color:var(--lux-gold-light)}
+.eyebrow:before {background:var(--lux-gold)}
+.proof-dot {background:var(--lux-gold)}
+.art-glow {background:rgba(197,168,117,.14)}
+.art-ring {border-color:rgba(197,168,117,.25)}
+.art-core {
+  background:linear-gradient(145deg,#26333b,#111a22);
+  border-color:rgba(197,168,117,.25);
+}
+.art-center {
+  background:linear-gradient(145deg,#d5b981,#a9874f);
+  color:#101820;
+  box-shadow:0 15px 40px rgba(197,168,117,.2);
+}
+.art-chip {
+  border-color:rgba(197,168,117,.3);
+  background:rgba(17,26,34,.96);
+}
+.hero-ribbon {border-color:rgba(197,168,117,.22)}
+.section {
+  background:var(--lux-cream);
+  color:var(--lux-ink);
+}
+.section-head h2,.why-copy h2 {color:var(--lux-ink)}
+.section-head p,.why-copy>p {color:#737a7e}
+.section .gradient {
+  background:linear-gradient(100deg,#a9874f,#d0b27b);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.section-alt,.contact-section {
+  background:
+    radial-gradient(ellipse at 85% 10%,rgba(197,168,117,.12),transparent 40%),
+    #121c24;
+}
+.service-card {
+  background:var(--lux-paper);
+  border-color:rgba(151,123,77,.22);
+  box-shadow:0 12px 35px rgba(25,31,35,.045);
+}
+.service-card:hover {
+  border-color:rgba(197,168,117,.7);
+  box-shadow:0 18px 42px rgba(25,31,35,.1);
+}
+.icon-box {
+  background:#eee7d9;
+  color:#9b7946;
+  border-color:rgba(197,168,117,.4);
+}
+.service-card h3 {color:#17232c}
+.service-card p {color:#737a7e}
+.card-link {color:#987743}
+.industry-card {
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(197,168,117,.34);
+  border-radius:9px;
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 14px 32px rgba(0,0,0,.16);
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+.industry-card:before {
+  background:linear-gradient(180deg,rgba(12,19,25,.04) 0%,rgba(12,19,25,.28) 36%,rgba(12,19,25,.94) 100%);
+  opacity:1;
+}
+.industry-card:after {
+  border-color:rgba(226,204,161,.22);
+  box-shadow:0 0 0 18px rgba(226,204,161,.025);
+}
+.industry-card:hover {
+  transform:translateY(-7px);
+  border-color:#d4b77e;
+  box-shadow:0 22px 48px rgba(0,0,0,.24);
+}
+.industry-card:nth-of-type(1) {
+  background-image:linear-gradient(180deg,rgba(12,19,25,.02),rgba(12,19,25,.9)),url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85");
+}
+.industry-card:nth-of-type(2) {
+  background-image:linear-gradient(180deg,rgba(12,19,25,.02),rgba(12,19,25,.9)),url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85");
+}
+.industry-card:nth-of-type(3) {
+  background-image:linear-gradient(180deg,rgba(12,19,25,.02),rgba(12,19,25,.9)),url("https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85");
+}
+.industry-card:nth-of-type(4) {
+  background-image:linear-gradient(180deg,rgba(12,19,25,.02),rgba(12,19,25,.9)),url("https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85");
+}
+.industry-card:nth-of-type(5) {
+  background-image:linear-gradient(180deg,rgba(12,19,25,.02),rgba(12,19,25,.9)),url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=85");
+}
+.industry-card:nth-of-type(6) {
+  background-image:linear-gradient(180deg,rgba(12,19,25,.02),rgba(12,19,25,.9)),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85");
+}
+.industry-card h3 {color:#fff}
+.industry-number,.industry-icon {color:#e2cca1}
+.why-art {
+  border-color:rgba(197,168,117,.32);
+  box-shadow:0 20px 55px rgba(0,0,0,.12);
+}
+.why-emblem {
+  background:linear-gradient(145deg,#d5b981,#a9874f);
+  color:#101820;
+  box-shadow:0 16px 40px rgba(197,168,117,.2);
+}
+.benefit h3 {color:#17232c}
+.check {
+  background:#eee7d9;
+  border-color:rgba(197,168,117,.45);
+  color:#987743;
+}
+.process-card {
+  background:linear-gradient(145deg,#202d36,#141e26);
+  border-color:rgba(197,168,117,.22);
+}
+.process-card:hover {border-color:rgba(226,204,161,.65)}
+.process-no {color:#e2cca1}
+.cta-band {
+  background:
+    radial-gradient(ellipse at 88% 0%,rgba(197,168,117,.2),transparent 48%),
+    linear-gradient(110deg,#202d36,#111b23);
+  border-color:rgba(197,168,117,.32);
+}
+.cta-band .btn {background:var(--lux-gold);color:#101820}
+.contact-section .gradient {
+  background:linear-gradient(100deg,#f0dfbd,#c5a875);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.contact-method {border-color:rgba(197,168,117,.24)}
+.contact-method-icon {background:rgba(197,168,117,.14);color:#e2cca1}
+.form-wrap {
+  background:#f8f5ed;
+  border:1px solid rgba(197,168,117,.4);
+  box-shadow:0 24px 65px rgba(0,0,0,.22);
+}
+.form-wrap input:focus,.form-wrap select:focus,.form-wrap textarea:focus {
+  border-color:#b08d55;
+  box-shadow:0 0 0 3px rgba(197,168,117,.16);
+}
+.faq details {border-color:rgba(197,168,117,.25)}
+.faq summary:hover {color:#e2cca1}
+@media(max-width:720px) {
+  .industry-card {min-height:190px}
+  .hero {padding-top:100px}
+  .hero-art {min-height:320px}
+  .section {padding:78px 0}
+}
+@media(prefers-reduced-motion:reduce) {
+  .industry-card,.service-card,.process-card {transition:none}
+}
+
+
+/* BUYUSALEAD — SIGNATURE MONOGRAM */
+.logo { gap:13px; }
+.logo-mark {
+  width:46px;height:46px;flex:0 0 46px;
+  display:grid;place-items:center;
+  border-radius:11px;
+  border:1px solid #ead7ad;
+  background:linear-gradient(145deg,#ead9b5 0%,#c5a875 52%,#a9854d 100%);
+  color:#17212a;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),
+             0 5px 18px rgba(0,0,0,.2);
+}
+.logo-mark svg {width:31px;height:31px;}
+.logo-name {font-weight:750;letter-spacing:-.8px;}
+.logo-name span {color:#e0c493;}
+.logo-name small {
+  color:#c5a875;font-size:7px;letter-spacing:1.8px;font-weight:700;
+}
+footer .logo-mark {
+  background:linear-gradient(145deg,#ead9b5,#b9945d);
+  color:#17212a;border-color:#ead7ad;
+}
+@media(max-width:520px) {
+  .logo-mark {width:41px;height:41px;flex-basis:41px;}
+  .logo-mark svg {width:28px;height:28px;}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -693,14 +935,12 @@ input:focus, select:focus, textarea:focus {
 <header>
  <div class="container nav">
   <a class="logo" href="#home" aria-label="BuyUsaLead home">
-   <span class="logo-mark">
-    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M7 8h13.5c6.7 0 10.5 3.1 10.5 8 0 3.2-1.7 5.6-4.8 6.7 4.2 1 6.8 3.8 6.8 7.8 0 5.5-4.2 9-11.5 9H7V8Z"/>
-<path d="M15 15h5.3c2.6 0 4 1 4 3s-1.4 3.1-4 3.1H15V15Z"/>
-<path d="M15 27h6.7c2.9 0 4.5 1.1 4.5 3.3s-1.6 3.4-4.5 3.4H15V27Z"/>
-<path d="M29 9v16.5c0 8 3.1 12 8 12s8-4 8-12V9"/>
-</svg>
-   </span>
+   <span class="logo-mark"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M10 8.5h13.5c6.2 0 9.5 2.9 9.5 7.2 0 3.1-1.8 5.3-5 6.3 4.4.9 7 3.7 7 7.7 0 5.5-4.1 9-11.2 9H10V8.5Z"/>
+<path d="M17 15h5.5c2.7 0 4.2 1 4.2 3s-1.5 3.1-4.2 3.1H17V15Z"/>
+<path d="M17 27h6.5c3 0 4.6 1.1 4.6 3.3s-1.6 3.4-4.6 3.4H17V27Z"/>
+<path d="M29.5 9v17c0 7.8 2.9 12 7.3 12s7.2-4.2 7.2-12V9"/>
+</svg></span>
    <span class="logo-name">Buy<span>Usa</span>Lead<small>US CUSTOMER ACQUISITION</small></span>
   </a>
   <nav class="navlinks" id="navlinks">
@@ -922,11 +1162,11 @@ input:focus, select:focus, textarea:focus {
 
 <footer>
  <div class="container footer-row">
-  <a class="logo" href="#home"><span class="logo-mark"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M7 8h13.5c6.7 0 10.5 3.1 10.5 8 0 3.2-1.7 5.6-4.8 6.7 4.2 1 6.8 3.8 6.8 7.8 0 5.5-4.2 9-11.5 9H7V8Z"/>
-<path d="M15 15h5.3c2.6 0 4 1 4 3s-1.4 3.1-4 3.1H15V15Z"/>
-<path d="M15 27h6.7c2.9 0 4.5 1.1 4.5 3.3s-1.6 3.4-4.5 3.4H15V27Z"/>
-<path d="M29 9v16.5c0 8 3.1 12 8 12s8-4 8-12V9"/>
+  <a class="logo" href="#home"><span class="logo-mark"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M10 8.5h13.5c6.2 0 9.5 2.9 9.5 7.2 0 3.1-1.8 5.3-5 6.3 4.4.9 7 3.7 7 7.7 0 5.5-4.1 9-11.2 9H10V8.5Z"/>
+<path d="M17 15h5.5c2.7 0 4.2 1 4.2 3s-1.5 3.1-4.2 3.1H17V15Z"/>
+<path d="M17 27h6.5c3 0 4.6 1.1 4.6 3.3s-1.6 3.4-4.6 3.4H17V27Z"/>
+<path d="M29.5 9v17c0 7.8 2.9 12 7.3 12s7.2-4.2 7.2-12V9"/>
 </svg></span><span class="logo-name">Buy<span>Usa</span>Lead<small>US CUSTOMER ACQUISITION</small></span></a>
   <p>© <span id="year"></span> BuyUsaLead. All rights reserved.</p>
   <div class="footer-links"><a href="#solutions">Solutions</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>

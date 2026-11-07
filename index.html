@@ -607,6 +607,63 @@ footer .logo-mark{background:#315cf5;border-color:rgba(255,255,255,.18)}
  .footer-row{gap:17px}
 }
 
+
+
+/* BUYUSALEAD ACCESSIBILITY & MOTION POLISH */
+html { scroll-behavior:smooth; }
+body { text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; }
+::selection { background:rgba(49,92,245,.22); color:#101a2a; }
+:focus-visible {
+  outline:3px solid #7899ff;
+  outline-offset:3px;
+}
+img, svg { max-width:100%; }
+button, a, input, select, textarea { -webkit-tap-highlight-color:transparent; }
+a, button { transition:color .22s ease, background .22s ease, border-color .22s ease, transform .22s ease, box-shadow .22s ease; }
+input:focus, select:focus, textarea:focus {
+  outline:none;
+  border-color:#315cf5;
+  box-shadow:0 0 0 3px rgba(49,92,245,.12);
+}
+.art-glow { animation:bsl-glow 8s ease-in-out infinite alternate; }
+.art-chip { animation:bsl-float 6s ease-in-out infinite; }
+.art-chip:nth-of-type(2n) { animation-delay:-2.5s; }
+.service-card, .industry-card, .process-card, .contact-method { will-change:transform; }
+@keyframes bsl-float {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-7px); }
+}
+@keyframes bsl-glow {
+  from { opacity:.65; }
+  to { opacity:1; }
+}
+@media (hover:none) {
+  .service-card:hover, .industry-card:hover, .process-card:hover { transform:none; }
+}
+@media (max-width:720px) {
+  .hero { padding-top:100px; }
+  .hero h1 { font-size:clamp(39px,10vw,58px); letter-spacing:-2px; }
+  .section { padding:76px 0; }
+  .section-head { margin-bottom:36px; }
+  .form-wrap { padding:24px 18px; }
+  .cta-band { padding:34px 22px; }
+  .hero-art { min-height:330px; }
+}
+@media (max-width:420px) {
+  .hero h1 { font-size:clamp(35px,10vw,46px); }
+  .hero-ribbon { margin-top:35px; }
+  .form-wrap { padding:20px 15px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after {
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    scroll-behavior:auto !important;
+    transition-duration:.01ms !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -618,6 +675,17 @@ footer .logo-mark{background:#315cf5;border-color:rgba(255,255,255,.18)}
  "description":"US-focused lead generation and pay-per-call campaign solutions."
 }
 </script>
+
+  <meta property="og:site_name" content="BuyUsaLead">
+  <meta property="og:image" content="https://akingstar.github.io/buyusalead/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BuyUsaLead — Premium US Lead Generation and Pay-Per-Call">
+  <meta name="twitter:title" content="BuyUsaLead | Premium US Lead Generation & Pay-Per-Call">
+  <meta name="twitter:description" content="US-focused lead generation and pay-per-call campaign solutions for businesses.">
+  <meta name="twitter:image" content="https://akingstar.github.io/buyusalead/og-image.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
 </head>
 <body>
 <div id="progress"></div>

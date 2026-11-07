@@ -907,126 +907,187 @@ footer .logo-mark {
 }
 
 
-/* BUYUSALEAD — SOFT SAGE THREE-COLOUR THEME */
+
+/* BUYUSALEAD — MIDNIGHT NAVY PREMIUM DESIGN */
 :root {
-  --lux-ink:#294B3E;
-  --lux-deep:#294B3E;
-  --lux-cream:#F4F6F1;
+  --lux-ink:#172D3B;
+  --lux-deep:#102432;
+  --lux-cream:#F5F8F9;
   --lux-paper:#FFFFFF;
-  --lux-gold:#AFC4B2;
-  --lux-gold-light:#AFC4B2;
-  --lux-muted:#65756B;
+  --lux-gold:#2F8F83;
+  --lux-gold-light:#D9ECE8;
+  --lux-muted:#667782;
 }
 
+/* Global */
+html {scroll-behavior:smooth}
 body {
-  background:#F4F6F1;
-  color:#294B3E;
+  background:#F5F8F9;
+  color:#172D3B;
+}
+::selection {
+  background:#D9ECE8;
+  color:#102432;
 }
 
+/* Header and navigation */
 header {
-  background:rgba(41,75,62,.97);
+  background:rgba(16,36,50,.98);
 }
-
-.navlinks {color:#F4F6F1}
-.navlinks a:hover {color:#AFC4B2}
-
+.logo {
+  gap:10px;
+}
 .logo-mark,
 footer .logo-mark {
-  background:#AFC4B2;
-  border-color:#AFC4B2;
-  color:#294B3E;
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  border-radius:10px;
+  background:linear-gradient(145deg,#2F8F83,#246E68);
+  color:#FFFFFF;
+  border:1px solid rgba(255,255,255,.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
+.logo-mark svg {
+  width:27px;
+  height:27px;
+}
+.logo-name {
+  color:#FFFFFF;
+  font-size:19px;
+  font-weight:750;
+  letter-spacing:-.55px;
+  line-height:1.1;
+}
+.logo-name span {color:#65B9AA}
+.logo-name small {
+  display:block;
+  color:#B7C9D0;
+  font-size:7px;
+  letter-spacing:1.65px;
+  margin-top:4px;
+}
+.navlinks {color:#E6EEF1}
+.navlinks a:hover {color:#65B9AA}
 
-.logo-name span,
-.logo-name small {color:#AFC4B2}
-
+/* Buttons */
 .btn-primary,
 .btn-gold,
 .cta-band .btn {
-  background:#294B3E;
-  border-color:#294B3E;
+  background:#2F8F83;
+  border-color:#2F8F83;
   color:#FFFFFF;
+  box-shadow:0 5px 16px rgba(47,143,131,.16);
 }
-
 .btn-primary:hover,
 .btn-gold:hover,
 .cta-band .btn:hover {
-  background:#AFC4B2;
-  border-color:#AFC4B2;
-  color:#294B3E;
+  background:#246E68;
+  border-color:#246E68;
+  color:#FFFFFF;
+  transform:translateY(-2px);
 }
 
+/* Hero */
 .hero {
-  background:#F4F6F1;
-  color:#294B3E;
+  background:linear-gradient(135deg,#F5F8F9 0%,#EAF2F2 100%);
+  color:#172D3B;
 }
+.hero h1,.hero h2 {color:#172D3B}
+.hero p {color:#586C76}
+.hero:after {border-color:rgba(47,143,131,.14)}
+.eyebrow {color:#287B72}
+.eyebrow:before {background:#2F8F83}
+.proof-dot {background:#2F8F83}
+.art-glow {background:rgba(47,143,131,.12)}
+.art-ring {border-color:rgba(47,143,131,.25)}
 
-.hero h1,
-.hero h2 {color:#294B3E}
-
-.hero p {color:#65756B}
-.hero:after {border-color:rgba(41,75,62,.12)}
-
-.eyebrow,
-.industry-number,
-.industry-icon,
-.process-no {color:#294B3E}
-
-.eyebrow:before,
-.proof-dot {background:#AFC4B2}
-
+/* Main sections */
+section {scroll-margin-top:90px}
 .section-head h2,
-.why-copy h2 {color:#294B3E}
-
+.why-copy h2 {color:#172D3B}
 .section-head p,
-.why-copy>p,
-.service-card p {color:#65756B}
+.why-copy>p {color:#667782}
 
+/* Cards */
 .service-card,
 .benefit,
 .process-card,
 .contact-method {
   background:#FFFFFF;
-  border-color:rgba(41,75,62,.12);
+  border-color:#E1E9EB;
+  box-shadow:0 8px 28px rgba(23,45,59,.045);
 }
-
 .service-card:hover,
-.process-card:hover {border-color:#AFC4B2}
-
-.card-link,
-.faq summary:hover {color:#294B3E}
-
+.process-card:hover {
+  border-color:#8BC5BB;
+  box-shadow:0 12px 32px rgba(23,45,59,.09);
+}
+.service-card h3,
+.benefit h3 {color:#172D3B}
+.service-card p {color:#667782}
+.card-link {color:#287B72}
 .industry-card:before {
   background:linear-gradient(
     180deg,
-    rgba(41,75,62,.04),
-    rgba(41,75,62,.88)
+    rgba(16,36,50,.02) 0%,
+    rgba(16,36,50,.35) 40%,
+    rgba(16,36,50,.94) 100%
   );
 }
+.industry-card h3 {color:#FFFFFF}
+.industry-number,
+.industry-icon,
+.process-no {color:#8DD0C4}
 
+/* Accent details */
 .contact-method-icon {
-  background:#AFC4B2;
-  color:#294B3E;
+  background:#E3F0EE;
+  color:#246E68;
+}
+.faq details {border-color:#DDE7E9}
+.faq summary:hover {color:#287B72}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color:#2F8F83;
+  box-shadow:0 0 0 3px rgba(47,143,131,.10);
 }
 
-.faq details {border-color:rgba(41,75,62,.16)}
+/* Footer and floating actions */
+footer {background:#102432}
+.footer-row p,
+.footer-links,
+.footer-legal {color:#B7C5CC}
+.footer-links a:hover,
+.footer-legal a:hover {color:#FFFFFF}
+#progress {background:#2F8F83;box-shadow:none}
+.dock-wa {background:#246E68}
+.dock-email {background:#172D3B}
 
-footer {background:#294B3E}
-#progress {background:#AFC4B2;box-shadow:none}
-.dock-wa {background:#294B3E}
-.dock-email {background:#294B3E}
-
-::selection {
-  background:#AFC4B2;
-  color:#294B3E;
+/* Responsive logo sizing */
+@media(max-width:720px) {
+  .logo {gap:8px}
+  .logo-mark {
+    width:38px;
+    height:38px;
+    flex-basis:38px;
+    border-radius:9px;
+  }
+  .logo-mark svg {width:25px;height:25px}
+  .logo-name {font-size:17px}
+  .logo-name small {font-size:6px;letter-spacing:1.35px}
 }
-
-button:focus-visible,
-a:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline-color:#294B3E;
+@media(max-width:380px) {
+  .logo-mark {
+    width:35px;
+    height:35px;
+    flex-basis:35px;
+  }
+  .logo-mark svg {width:23px;height:23px}
+  .logo-name {font-size:16px}
 }
 
 </style>

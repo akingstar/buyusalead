@@ -1,0 +1,18 @@
+{
+  "id": "/buyusalead/",
+  "name": "BuyUsaLead — Premium USA Leads",
+  "short_name": "BuyUsaLead",
+  "description": "Request premium, compliant USA insurance leads with a quick form.",
+  "start_url": "/buyusalead/",
+  "scope": "/buyusalead/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#101820",
+  "theme_color": "#101820",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
